@@ -33,6 +33,8 @@ function App() {
                 </p>
               <ul className="actions">
                 <li>
+                  <button className="button primary">Register</button>
+                  <br/>
                   <button className="button primary">Sign In</button>
                 </li>
                 <li>
