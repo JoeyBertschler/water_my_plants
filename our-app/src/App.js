@@ -8,7 +8,11 @@ export default function App() {
     <div className='App'>
       <div className='wrapper'>
         <header className='App-header'>
-        <h1>Water my plants</h1>
+        <h1 style={{
+              color: 'white',
+            }}>
+         Water my plants
+        </h1>
         <p>
           Never forget when it's time to feed your foliage and quench your
           plants' thirst.
@@ -17,12 +21,15 @@ export default function App() {
       </header>
       <Link to='/'></Link>
       <Switch>
-      <Route exact path='/register'>
-          <Register/>
-        </Route>
+
       <Route exact path='/'>
         <Home/>
       </Route>
+
+      <Route exact path='/register'>
+          <Register/>
+      </Route>
+
       </Switch>
       </div>
     </div>

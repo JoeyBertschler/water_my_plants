@@ -1,24 +1,37 @@
+
 import '../../src/App.css';
 import { Route, Link, Switch } from 'react-router-dom';
 import Register from './Register';
 
 
-import logo from '../logo.svg';
+// import logo from '../logo.svg';
 import thumb1 from '../copyOfImages/gallery/thumbs/01.jpg'
 import thumb2 from '../copyOfImages/gallery/thumbs/02.jpg'
 import thumb3 from '../copyOfImages/gallery/thumbs/03.jpg'
 import thumb4 from '../copyOfImages/gallery/thumbs/04.jpg'
-import thumb5 from '../copyOfImages/gallery/thumbs/05.jpg'
-import thumb6 from '../copyOfImages/gallery/thumbs/06.jpg'
-import thumb7 from '../copyOfImages/gallery/thumbs/07.jpg'
+// import thumb5 from '../copyOfImages/gallery/thumbs/05.jpg'
+// import thumb6 from '../copyOfImages/gallery/thumbs/06.jpg'
+// import thumb7 from '../copyOfImages/gallery/thumbs/07.jpg'
 import thumb8 from '../copyOfImages/gallery/thumbs/08.jpg'
 import thumb9 from '../copyOfImages/gallery/thumbs/09.jpg'
 import thumb10 from '../copyOfImages/gallery/thumbs/10.jpg'
 
+import flowerPot from '../copyOfImages/icons/flowerPot.png'
+
+
+// me= {fa-laptop} > Consequat tempus</li>
+//                 <li className= {fa-bolt} > Etiam adipiscing</li>
+//                 <li className= {fa-cog} > Blandit condimentum</li>
+//                 <li className= {fa-signal} > Libero nullam</li>
+//                 <li className= {fa-map-marker-alt} > Lorem ipsum dolor</li>
+//                 <li className= {fa-code} ></li>
+
+// Notes:
 // import main from './copyOfJs/main' --> Tried importing by wrapping stuff into functions and..
 // import util from './copyOfJs/util' --> ..making a copy folder of js but couldn't figure it out
 
 function Home() {
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -32,11 +45,13 @@ function Home() {
             <br />
             <button className="button primary">Sign In</button>
           </li>
-          <li>
+
+          {/* <li>
             <a href="#first" className="arrow scrolly">
               <span className="label">Next</span>
             </a>
-          </li>
+          </li> */}
+
         </ul>
       </section>
         </header>
@@ -48,21 +63,28 @@ function Home() {
           {/* Section */}
           <section>
             <header>
-              <h2>Awesome Features</h2>
+              <h2> Simplify Your Gardening </h2>
+              {/* I tried to allign this text with the line below in the center but some other styles in App.css interfere
+              style={{textAlign: 'center'}} */}
             </header>
             <div className="content">
               <p>
-                <strong>Etiam tristique libero</strong> eu nibh porttitor amet
-                fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies
-                condimentum.
+                <strong>Track</strong> water and soil and learn about your 
+                plants and handy gardening tricks.
               </p>
               <ul className="feature-icons">
-                <li className="icon solid fa-laptop">Consequat tempus</li>
-                <li className="icon solid fa-bolt">Etiam adipiscing</li>
-                <li className="icon solid fa-signal">Libero nullam</li>
-                <li className="icon solid fa-cog">Blandit condimentum</li>
-                <li className="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-                <li className="icon solid fa-code">Nibh amet venenatis</li>
+                <li> <img width='10%' src={flowerPot}/>
+                  Water</li>
+                <li> <img width='10%' src={flowerPot}/>
+                  Soil</li>
+                <li> <img width='10%' src={flowerPot}/>
+                  Light</li>
+                <li> <img width='10%' src={flowerPot}/>
+                  Temperature</li>
+                <li> <img width='10%' src={flowerPot}/>
+                  Pots</li>
+                <li> <img width='10%' src={flowerPot}/>
+                  Plant</li>
               </ul>
               <p>
                 Vehicula ultrices sed ultricies condimentum. Magna sed etiam
@@ -90,14 +112,15 @@ function Home() {
                 <div className="content">
                   <div className="gallery">
 
-                    <img src={logo} className="App-logo" alt="logo" />
+                    {/* <img src={logo} className="App-logo" alt="logo" />
                       <p>
                         React IMG tag for reference
-                      </p>
+                      </p> */}
 
-                    <a href="../public/InitialData/images/thumbs/01.jpg" className="landscape"
-                      ><img src={thumb1} alt=""
-                    /></a>
+                   
+                    <img className="landscape" height='100%' width='100%' src={thumb1} alt=""/>
+                     {/*   Joey: a tag not actually needed, nice    */}
+                    
                     <a href="images/gallery/fulls/02.jpg"
                       ><img src={thumb2} alt=""
                     /></a>
@@ -203,7 +226,8 @@ function Home() {
                   <h3>Address</h3>
                   <span>1234 Somewhere Road, Nashville, TN 00000</span>
                 </li>
-                <li>
+                
+                {/* <li>
                   <h3>Elsewhere</h3>
                   <ul className="icons">
                     <li>
@@ -237,7 +261,8 @@ function Home() {
                       >
                     </li>
                   </ul>
-                </li>
+                </li> */}
+
               </ul>
             </footer>
 
