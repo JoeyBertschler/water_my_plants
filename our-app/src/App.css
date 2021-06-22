@@ -4001,6 +4001,10 @@ body.is-ie #wrapper > section > .content > section {
   }
 }
 
-.buttonPrimary {
+/* .buttonPrimary {
   Joey: no experience with css, skipping for now low priority)
+} */
+
+input {
+  text-align: center;
 }

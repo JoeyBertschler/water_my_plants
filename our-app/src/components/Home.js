@@ -1,4 +1,3 @@
-
 import '../../src/App.css';
 import { Route, Link, Switch } from 'react-router-dom';
 import Register from './Register';
@@ -43,7 +42,9 @@ function Home() {
               <button className="button primary">Register</button>
             </Link>
             <br />
+            <Link to='login'>
             <button className="button primary">Sign In</button>
+            </Link>
           </li>
 
           {/* <li>
