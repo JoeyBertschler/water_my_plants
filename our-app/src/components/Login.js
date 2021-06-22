@@ -1,6 +1,6 @@
 import '../../src/App.css'
 import React from 'react'
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Login (){
     return(
@@ -19,7 +19,7 @@ function Login (){
             </form>
 
             <Link to='/'>Cancel</Link>
-            <Link to='/'>
+            <Link to='/register'>
                 <h6 style={{ fontSize: '7px'}}>
                     Don't have an account? <p style={{fontWeight: 'bold'}}>Register</p> </h6> 
             </Link>

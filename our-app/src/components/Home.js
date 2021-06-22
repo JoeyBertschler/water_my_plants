@@ -43,7 +43,7 @@ function Home() {
               <button className="button primary">Register</button>
             </Link>
             <br />
-            <button className="button primary">Sign In</button>
+            <Link to='/sign-in'><button className="button primary">Sign In</button></Link>
           </li>
 
           {/* <li>

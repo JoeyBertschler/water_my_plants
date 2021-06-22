@@ -3,6 +3,7 @@ import "./App.css";
 import { Route, Link, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Register from './components/Register'
+import Login from "./components/Login";
 
 const intialFormValues = {
   username: '',
@@ -37,7 +38,9 @@ export default function App() {
       <Route exact path='/'>
         <Home/>
       </Route>
-
+      <Route path = '/sign-in'>
+        <Login/>
+      </Route>
       <Route exact path='/register'>
           <Register
           formChange={formChange}
