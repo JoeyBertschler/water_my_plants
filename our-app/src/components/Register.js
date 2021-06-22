@@ -32,7 +32,15 @@ function Register (props) {
                 </label>
                 <button className='form-buttons'>submit</button>
             </form>
-            <Link to='/'><button className='form-buttons'>Cancel</button></Link>
+
+
+            {/* <Link to='/'><button className='form-buttons'>Cancel</button></Link> */}
+            <Link to='/'>Cancel</Link>
+            {/* Feel free to switch back to a button Matt, I just thought this is a little more standard */}
+            <Link to='/'>
+                <h6 style={{ fontSize: '7px'}}>
+                    Already have an account? <p style={{fontWeight: 'bold'}}>Login</p> </h6> 
+            </Link>
         </div>
     )}
 
