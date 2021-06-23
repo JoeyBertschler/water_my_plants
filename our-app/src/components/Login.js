@@ -1,12 +1,12 @@
 import '../../src/App.css'
 import React from 'react'
-import { Redirect, Link, useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { Input } from 'semantic-ui-react'
 
 
 function Login (){
 const history = useHistory()
-    const onSubmit = (evt) => {
+    const onSubmit = () => {
         history.push('/dashboard')
         }
     return(
