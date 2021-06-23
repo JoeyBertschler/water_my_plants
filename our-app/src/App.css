@@ -40,7 +40,16 @@ form label .register-input {
   color:white;
   margin-bottom: 2%;
 }
-
+.dash-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+#logout {
+  text-decoration: none;
+  color:black;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
