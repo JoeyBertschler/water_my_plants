@@ -1,28 +1,33 @@
 import '../../src/App.css'
 import React from 'react'
-import { Link, Route } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { Input } from 'semantic-ui-react'
 
+
 function Login (){
+const history = useHistory()
+    const onSubmit = () => {
+        history.push('/dashboard')
+        }
     return(
         <div>
-            <form>
+            <form >
                 
-                <label> Username: <br/>
-                    <Input placeholder='John Doe' style={{width:'40%'}} className='register-input' type='text'></Input>
+                <label> Username:
+                    <Input className='register-input' type='text' ></Input>
                 </label>
 
-                <label> Password: <br/>
-                    <Input placeholder='$3cuRePasswqrd_' style={{width:'40%'}} className='register-input' type='password'></Input>
+                <label> Password:
+                    <Input className='register-input' type='password'></Input>
                 </label>
-                                  <br/>
-                <button className='form-buttons'>submit</button>
+
+                <button onClick={onSubmit} className='form-buttons'>submit</button>
             </form>
 
-            <Link to='/'>Home</Link>
+            <Link to='/'>Cancel</Link>
             <Link to='/register'>
-                <h6 style={{ fontSize: '7px'}}>  </h6> 
-                <h6> Back to <p style={{fontWeight: 'bold'}}> Register</p> </h6>
+                <h6 style={{ fontSize: '7px'}}>
+                    Don't have an account? <p style={{fontWeight: 'bold'}}>Register</p> </h6> 
             </Link>
         </div>
     )}

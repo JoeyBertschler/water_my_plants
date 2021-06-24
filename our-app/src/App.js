@@ -3,6 +3,7 @@ import { Route, Link, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Register from './components/Register'
 import Login from './components/Login'
+import DashBoard from './components/Dashboard'
 import React, { useState } from "react";
 
 const intialFormValues = {
@@ -39,6 +40,10 @@ export default function App() {
 
       <Route exact path='/'>
         <Home/>
+      </Route>
+
+      <Route path='/dashboard'>
+        <DashBoard />
       </Route>
 
       <Route exact path='/register'>

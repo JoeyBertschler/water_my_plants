@@ -19,7 +19,7 @@ function Register (props) {
     return(
         <div>
 
-            <form>
+            <form onSubmit={onSubmit}>
 
                 <label> Username:
                     <input placeholder='John Doe' className='register-input' type='text'
@@ -27,7 +27,7 @@ function Register (props) {
                 </label>
 
                 <label> Phone Number:
-                    <input placeholder='2025550155' className='register-input' type='text'
+                    <input placeholder='2025550155' className='register-input' type='tel'
                            name='phone' value={values.phone} onChange={onChange} ></input>
                 </label>
 

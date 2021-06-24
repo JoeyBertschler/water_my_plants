@@ -39,8 +39,28 @@ form label .register-input {
   background-color: grey;
   color:white;
   margin-bottom: 2%;
+  width:15%;
 }
-
+.dashboard-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+.dash-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+#acc-sett h5 {
+  width: 12%;
+  margin-left: 87%;
+}
+#acc-sett h5:hover {
+  color:#2e6559
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
